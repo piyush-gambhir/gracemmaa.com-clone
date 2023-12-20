@@ -1,20 +1,22 @@
-import Link from "@components/custom-link";
-import FeaturedProjectContainer from "@/components/featured-project-container";
+import Link from "@components/ui/custom-link";
+import FeaturedProjectContainer from "@components/ui/featured-project-container";
+import Divider from "@components/ui/divider";
+import SmallDivider from "@components/ui/small-divider";
 
 export default function Home() {
   return (
     <main className="flex flex-col pb-4">
       <div className="flex flex-col pt-[144px]">
-        <div className="flex flex-col pb-[120px]">
-          <h1 className="font-extrabold text-[88px] leading-[107px] text-black text-opacity-20 dark:text-white dark:text-opacity-20">
+        <div className=" pb-[120px]">
+          <h1 className="font-extrabold text-[3.5rem] sm:text-[5.5rem] leading-[1.25em] sm:leading-[107px] text-black text-opacity-20 dark:text-white dark:text-opacity-20">
             Grace Ma.
           </h1>
-          <h1 className="font-extrabold text-[88px] leading-[107px]">
-            Product Designer
+          <h1 className="flex-wrap font-extrabold text-[3.5rem] sm:text-[5.5rem] leading-[1.25em] sm:leading-[107px]">
+            Product Designer.
           </h1>
         </div>
         <div className="flex flex-col md:flex-row justify-between pb-[112px]">
-          <div className="flex flex-col lg:w-[20%]">
+          <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
             <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               CURRENT
             </h2>
@@ -28,18 +30,18 @@ export default function Home() {
               </Link>
             </p>
           </div>
-          <div className="flex flex-col lg:w-[20%]">
+          <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
             <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               SOON
             </h2>
             <p className="text-lg leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
               Incoming Product Designer at{" "}
-              <Link href="" className=" underline">
+              <Link href="" className="underline">
                 Facebook
               </Link>
             </p>
           </div>
-          <div className="flex flex-col lg:w-[20%]">
+          <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
             <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               PAST
             </h2>
@@ -60,12 +62,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="divider" className="h-16 my-12" />
+      <Divider />
       <div>
-        <h1 className="font-extrabold text-[88px] leading-[107px] text-black text-opacity-20 dark:text-white dark:text-opacity-20">
+        <h1 className="font-extrabold text-[3.5rem] sm:text-[5.5rem] leading-[1.25em] sm:leading-[107px] text-black text-opacity-20 dark:text-white dark:text-opacity-20">
           Featured Projects.
         </h1>
-        <div id="divider" className="h-16 my-12" />
+        <Divider />
         <FeaturedProjectContainer
           link="/facebook"
           tags={["Product Design", "Internship"]}
@@ -75,7 +77,7 @@ export default function Home() {
           imageAlt="Facebook Logo"
           imageClassName="w-auto max-h-[75%]"
         />
-        <div id="divider" className="h-16 my-12" />
+        <Divider />
         <FeaturedProjectContainer
           link="/helios"
           tags={["Product Design", "Case Study"]}
@@ -85,7 +87,7 @@ export default function Home() {
           imageAlt="Helios Project Image"
           imageClassName="w-auto max-h-[75%]"
         />
-        <div id="divider" className="h-16 my-12" />
+        <Divider />
         <FeaturedProjectContainer
           link="/misc"
           tags={["Gallery", "UI Design"]}
@@ -95,7 +97,7 @@ export default function Home() {
           imageAlt="Misc Project Image"
           imageClassName="h-auto max-w-[90%]"
         />
-        <div id="small-divider" className="h-4 my-2" />
+        <SmallDivider />
       </div>
     </main>
   );

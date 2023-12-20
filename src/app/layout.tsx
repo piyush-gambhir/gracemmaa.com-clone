@@ -5,8 +5,8 @@ import cn from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Piyush Gambhir",
-  description: "Personal Website of Piyush Gambhir.",
+  title: "Grace Ma",
+  description: "Personal Website of Grace Ma.",
 };
 
 import ClientThemeProvider from "@components/Providers/ClientThemeProvider";
@@ -22,11 +22,11 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "mx-auto m-2 bg-white dark:bg-[#101010] text-black dark:text-white transition-[background] duration-500 ease-in-out cursor-[url(https://gracemmaa.com/cursor.svg),_pointer] pt"
+          "m-2 bg-white dark:bg-[#101010] text-black dark:text-white transition-[background] duration-500 ease-in-out cursor-[url(https://gracemmaa.com/cursor.svg),_pointer]"
         )}
       >
         <ClientThemeProvider>
-          <div className="max-w-[90%] lg:max-w-[1168px] mx-auto flex flex-col">
+          <div className="m-2 max-w-[90%] mx-auto lg:max-w-[1168px]">
             <Header />
             {children}
             <Footer />

@@ -12,7 +12,7 @@ export default function ThemeToggleButton() {
 
   return (
     <div className="flex flex-row items-center">
-      <label className="inline-flex relative items-center mr-2 cursor-[url(https://gracemmaa.com/pointer.svg),_pointer]">
+      <label className="mr-2 relative inline-flex items-center cursor-[url(https://gracemmaa.com/pointer.svg),_pointer]">
         <input
           type="checkbox"
           className="sr-only peer"
@@ -23,8 +23,8 @@ export default function ThemeToggleButton() {
           onClick={() => {
             setTheme(theme === "dark" ? "light" : "dark");
           }}
-          className=" w-11 h-6 bg-[#cccccc] rounded-full peer-checked:after:translate-x-full after:absolute after:top-0.5 after:left-[2px] after:bg-[#acacac] after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#585858]"
-        ></div>
+          className="w-11 h-6 bg-[#cccccc] rounded-full peer-checked:after:translate-x-full after:absolute after:top-[3px] after:left-[6px] after:bg-black after:bg-opacity-50 after:rounded-full after:h-[18px] after:w-[18px] after:transition-all peer-checked:bg-[#585858]"
+        />
       </label>
       <SVGIcons iconName="Moon" className="w-4 h-4 " />
     </div>

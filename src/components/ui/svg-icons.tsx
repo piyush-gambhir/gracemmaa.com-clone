@@ -7,6 +7,7 @@ type Props = {
 
 const Icons = {
   RightArrow: RightArrow,
+  LongRightArrow: LongRightArrow,
   Moon: Moon,
 };
 
@@ -30,7 +31,7 @@ function RightArrow({ className }: Props) {
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 24 24"
-      className={cn("transform rotate-360 h-[1em] w-[1em]", className)}
+      className={cn("transform rotate-360", className)}
       data-icon="akar-icons:arrow-right"
       data-inline="false"
     >
@@ -46,6 +47,30 @@ function RightArrow({ className }: Props) {
   );
 }
 
+function LongRightArrow({ className }: Props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      width="40"
+      height="40"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 16 16"
+      className={cn("transform rotate-360", className)}
+      data-icon="bi:arrow-right"
+      data-inline="false"
+      data-width="40"
+      data-height="40"
+    >
+      <path
+        fill="currentColor"
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+      ></path>
+    </svg>
+  );
+}
 function Moon({ className }: Props) {
   return (
     <svg
@@ -54,7 +79,7 @@ function Moon({ className }: Props) {
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 24 24"
-      className={cn("transform rotate-360 h-[1em] w-[1em]", className)}
+      className={cn("transform rotate-360", className)}
       data-icon="bx:bx-moon"
       data-inline="false"
     >

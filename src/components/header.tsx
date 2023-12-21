@@ -38,7 +38,7 @@ export default function Header() {
         </div>
         <div className="pl-12 sm:pl-20">
           <Link
-            href="/https://www.instagram.com/graace.png/"
+            href="https://www.instagram.com/graace.png/"
             className={cn(
               "text-base font-semibold leading-[19px] pt-6 border-t-4 border-transparent text-black text-opacity-50 dark:text-white dark:text-opacity-50 hover:text-black hover:dark:text-white"
             )}

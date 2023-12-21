@@ -26,7 +26,7 @@ export default function RootLayout({
         )}
       >
         <ClientThemeProvider>
-          <div className="m-2 max-w-[90%] mx-auto lg:max-w-[1168px]">
+          <div className="max-w-[90%] mx-auto lg:max-w-[1168px]">
             <Header />
             {children}
             <Footer />

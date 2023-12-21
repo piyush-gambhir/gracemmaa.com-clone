@@ -177,7 +177,7 @@ export default function About() {
                 alt="Picture of a song."
                 width={172}
                 height={172}
-                className="rounded-lg pr-4 pb-4"
+                className="rounded-lg w-[156px] pr-4 pb-4"
               />
             ))}
           </div>

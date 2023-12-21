@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex flex-col pb-4">
       <div className="flex flex-col pt-[144px]">
-        <div className=" pb-[120px]">
+        <div data-aos="fade-up" data-aos-duration="1000" className="pb-[120px]">
           <h1 className="font-extrabold text-[3.5rem] sm:text-[5.5rem] leading-[1.25em] sm:leading-[107px] text-black text-opacity-20 dark:text-white dark:text-opacity-20">
             Grace Ma.
           </h1>
@@ -17,24 +17,24 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row justify-between pb-[112px]">
           <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
-            <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
+            <h2 className="text-xl my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               CURRENT
             </h2>
-            <p className="text-lg leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
+            <p className="text-base leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
               Freelance Product Designer at{" "}
               <Link
                 href=""
-                className=" underline cursor-[url(https://gracemmaa.com/pointer.svg),_pointer]"
+                className="underline cursor-[url(https://gracemmaa.com/pointer.svg),_pointer]"
               >
                 Friendly Studio
               </Link>
             </p>
           </div>
           <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
-            <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
+            <h2 className="text-xl my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               SOON
             </h2>
-            <p className="text-lg leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
+            <p className="text-base leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
               Incoming Product Designer at{" "}
               <Link href="" className="underline">
                 Facebook
@@ -42,10 +42,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col lg:w-[20%] pb-8 sm:pb-0">
-            <h2 className="my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
+            <h2 className="text-xl my-2 font-semibold leading-[165%] text-black text-opacity-50 dark:text-white dark:text-opacity-50">
               PAST
             </h2>
-            <p className="text-lg leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
+            <p className="text-base leading-7 text-black text-opacity-80 dark:text-white dark:text-opacity-80">
               Former intern at{" "}
               <Link href="" className=" underline">
                 Facebook

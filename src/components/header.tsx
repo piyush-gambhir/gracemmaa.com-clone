@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import cn from "clsx";
 import { usePathname } from "next/navigation";
 
@@ -9,9 +9,16 @@ import Link from "@components/ui/custom-link";
 
 export default function Header() {
   const pathname = usePathname();
-  const [activeTab, setActiveTab] = useState(
-    pathname === "/about" ? "about" : "work"
-  );
+  const [activeTab, setActiveTab] = useState("");
+  useEffect(() => {
+    if (pathname === "/") {
+      setActiveTab("work");
+    } else if (pathname === "/about") {
+      setActiveTab("about");
+    } else {
+      setActiveTab("");
+    }
+  }, [pathname]);
 
   return (
     <header className="pb-2 pt-12 flex flex-row justify-between">

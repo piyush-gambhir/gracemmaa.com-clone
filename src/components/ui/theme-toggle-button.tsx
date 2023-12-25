@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import SVGIcons from "./svg-icons";
+import SVGIcons from "@components/ui/svg-icons";
 
 export default function ThemeToggleButton() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setTheme(
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+    );
+    setMounted(true);
+  }, [setTheme, setMounted]);
+
   if (!mounted) return null;
 
   return (
